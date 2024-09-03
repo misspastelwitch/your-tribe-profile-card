@@ -68,6 +68,7 @@ article {
   min-width: 20em;
   border-radius: 1rem;
   background:  #f17377;
+
   background: linear-gradient(180deg, rgb(251, 214, 183) 40%,  #f17377 100%);
   box-shadow: 0 0 20px 20px rgba(241, 192, 147, 0.1);
   transition: 0.25s;
@@ -79,6 +80,7 @@ header {
   justify-content: center;
   align-items: center;
   justify-content: flex-end;
+
 }
 
 h1 {
