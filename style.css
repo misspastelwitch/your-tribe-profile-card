@@ -68,8 +68,16 @@ h1 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: lighter;
 }
-
-
+img {
+  position: relative;
+  top: 2rem;
+  width: 10rem;
+  height: 15rem;
+  border: 3px solid #8e421d;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px rgba(169, 117, 59, 0.2);
+  transition: 0.25s 0.15s;
+}
 button {
   position: absolute;
   right: 1rem;
@@ -127,17 +135,6 @@ button svg:nth-of-type(2) {
   opacity: 0;
   transition-delay: 0ms;
 }
-img {
-  position: relative;
-  top: 2rem;
-  width: 10rem;
-  height: 15rem;
-  border: 3px solid #8e421d;
-  border-radius: 50%;
-  box-shadow: 0 0 2px 2px rgba(169, 117, 59, 0.2);
-  transition: 0.25s 0.15s;
-}
-
 
 dl {
   display: grid;
@@ -222,7 +219,7 @@ article > p {
   transform: rotateY(180deg);
 }
 header {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 header img {
@@ -232,7 +229,7 @@ header img {
   background-color: #ccc;
 }
 main {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   padding-bottom: 50px;
   justify-content: center;
