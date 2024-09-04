@@ -1,66 +1,92 @@
 <!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visitekaartje</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    
-    <article>
-      
-      <header>
-        
-        <h1>S t e l l a</h1>
-        
-        <button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <title>Visitekaartje</title>
+  <link rel="stylesheet" href="./style.css">
+ 
+</head>
+<body>
 
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <title>Wijzig layout</title>
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-          <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
-            <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
-            <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
-            <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
-          </svg>
-        </button>
-        
-      </header>
-  
+<div class="container" id="flip-container">
+  <!-- Front Page -->
+  <div class="page front">
+    <header>
+      <h1>Stella</h1>
       <img src="./assets/pfp.jpg.jpg" alt="" width="800" height="800">
+    </header>
+    <main>
+      <h3>HvA FDND 24/25</h3>
+      <p>Amsterdam</p>
+    </main>
+    <footer>
+      <a href="stellaclough@gmail.com">📧</a>
+      <a href="https://github.com/misspastelwitch">🌐</a>
+      <a href="https://www.linkedin.com">🔗</a>
+      <a href="https://www.facebook.com">📘</a>
+    </footer>
+    <button class="flip-button" onclick="flip()">
 
-      <dl>
-        <dt></dt>
-        <dd>🌸</dd>
-        
-        <dt></dt>
-        <dd></dd>
-        
-        <dt></dt>
-        <dd>🌸</dd>
-      </dl>
-      <div class="toolbar">
-        <ul>
-            <li><a href="#"><i class="fas fa-home"></i> My portfolio</a></li>
-            <li><a href="#"><i class="fas fa-search"></i> Contact</a></li>
-            <li><a href="#"><i class="fas fa-user"></i> GitHub</a></li>
-  
-        </ul>
-    </div>
-      <p>HvA FDND 24'25, Amsterdam<br> International student with a passion for travel, cooking and the good life.</p>
-      
-    </article>
-    
+      <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
+        <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
+        <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
+        <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
+      </svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
+        <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
+        <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
+        <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
+      </svg>
+    </button>
+  </div>
 
-    <script src="scripts/script.js"></script>
-    
-  </body>
+  <div class="page back">
+    <header>
+    <h1>What I do</h1>
+    </header>
+    <main>
+      <h3> Study</h3>
+      <p>I currently study at the Hogeschool van Amsterdam. </p>
+      <h3>Hobbies</h3>
+      <p>I like travelling and discovering different cultures.</p>
+    </main>
+    <footer>
+      <a href="mailto:someone@example.com">📧</a>
+      <a href="https://www.website.com">🌐</a>
+      <a href="https://www.linkedin.com">🔗</a>
+      <a href="https://www.facebook.com">📘</a>
+    </footer>
+    <button class="flip-button" onclick="flip()">
+      <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <title>Wijzig layout</title>
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 8v-2a2 2 0 0 1 2 -2h2"></path>
+        <path d="M4 16v2a2 2 0 0 0 2 2h2"></path>
+        <path d="M16 4h2a2 2 0 0 1 2 2v2"></path>
+        <path d="M16 20h2a2 2 0 0 0 2 -2v-2"></path>
+      </svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M15 19v-2a2 2 0 0 1 2 -2h2"></path>
+        <path d="M15 5v2a2 2 0 0 0 2 2h2"></path>
+        <path d="M5 15h2a2 2 0 0 1 2 2v2"></path>
+        <path d="M5 9h2a2 2 0 0 0 2 -2v-2"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  function flip() {
+    document.getElementById('flip-container').classList.toggle('flip');
+  }
+</script>
+
+</body>
 </html>
