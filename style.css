@@ -34,7 +34,7 @@ body {
     padding: 2rem 2rem; 
   }
 }
-
+/* Background */
 article {
   position: relative;
   display: flex;
@@ -109,6 +109,7 @@ button:focus {
 button:focus svg {
   stroke: #f17377;
 }
+/* actual visitekaartje*/
 .container {
   width: 300px;
   height: 400px;
@@ -193,7 +194,7 @@ article > p {
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
   }
-
+/* Flipping motion*/
 .container {
   width: 300px;
   height: 400px;
@@ -237,7 +238,7 @@ main {
 .page.back article {
   padding-bottom: 6rem;
 }
-
+/* Toolbar at the bottom with links*/
 footer {
   position: fixed;
   bottom: 0;
